@@ -47,7 +47,7 @@ app.get("/certificate/:registration_no", async (req, res) => {
             certificate.student_img = certificate.student_img.toString('base64');
         }
 
-        // Parse array fields that are stored as comma-separated strings
+        // Parse array fields from comma-separated strings
         const multiValueFields = [
             'subject_code', 'subject_title', 'lec_units', 'lab_units',
             'credit_units', 'tuition_units', 'subject_section',
